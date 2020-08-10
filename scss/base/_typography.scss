@@ -1,0 +1,15 @@
+.underline {
+	position: relative;
+	display: inline-block;
+	padding-bottom: 10px;
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 70%;
+		height: 4px;
+		background-color: #66cc00;
+	}
+}

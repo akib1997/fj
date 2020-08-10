@@ -1,0 +1,17 @@
+.header {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 99994;
+	background-color: #113e5487;
+	transition: all .3s;
+
+	.logo {
+		max-width: 170px;
+		width: 100%;
+	}
+}
+.added {
+	background-color: #144760;
+}

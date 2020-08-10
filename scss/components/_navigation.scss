@@ -1,0 +1,46 @@
+.menu {
+	@include tab-screen {
+		background-color: #272762bf;
+		padding: 10px;
+	}
+	li {
+		a {
+			color: #fff;
+			padding: 0 5px;
+			margin: 0 15px;
+			text-transform: uppercase;
+			transition: ease .3s;
+			position: relative;
+
+			&::after {
+				content: '';
+				position: absolute;
+				width: 0%;
+				height: 2px;
+				background-color: #fff;
+				bottom: 0;
+				left: 0;
+				transition: width .3s;
+				display: block;
+			}
+
+			&:hover::after {
+				width: 100%;
+			}
+
+			@include medium-screen {
+				margin: 0 5px;
+			}
+
+			@include tab-screen {
+				margin: 8px 0;
+			}
+		}
+	}
+}
+
+.navbar-toggler {
+	i {
+		color: #fff;
+	}
+}

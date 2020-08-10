@@ -1,0 +1,106 @@
+html,
+body {
+	height: 100%;
+}
+
+.banner-slider .item {
+	height: 100vh;
+	position: relative;
+}
+.banner-slider .item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.banner-slider .item .cover {
+	// padding: 75px 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	display: flex;
+	align-items: center;
+
+	@include tab-screen {
+		padding: 20px;
+	}
+}
+.banner-slider .item .cover .header-content {
+	position: relative;
+	padding: 56px;
+	overflow: hidden;
+
+	@include tab-screen {
+		padding: 20px;
+	}
+}
+.banner-slider .item .cover .header-content .line {
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	border: 7px solid #fff;
+	-webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+	clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+
+	@include tab-screen {
+		border: 3px solid #fff;
+	}
+}
+.banner-slider .item .cover .header-content h2 {
+	font-weight: 300;
+	font-size: 35px;
+	color: #fff;
+	@include tab-screen {
+		font-size: 25px;
+	}
+}
+.banner-slider .item .cover .header-content h1 {
+	font-size: 50px;
+	font-weight: 600;
+	margin: 5px 0 20px;
+	word-spacing: 3px;
+	color: #fff;
+	@include tab-screen {
+		font-size: 35px;
+		margin: 5px 9 10px;
+	}
+}
+.banner-slider .item .cover .header-content h4 {
+	font-size: 24px;
+	font-weight: 300;
+	color: #fff;
+
+	@include tab-screen {
+		font-size: 20px;
+	}
+}
+.banner-slider .owl-item.active h1 {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-name: fadeInDown;
+	animation-delay: 0.3s;
+}
+.banner-slider .owl-item.active h2 {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-name: fadeInDown;
+	animation-delay: 0.3s;
+}
+.banner-slider .owl-item.active h4 {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-name: fadeInUp;
+	animation-delay: 0.3s;
+}
+.banner-slider .owl-item.active .line {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-name: fadeInLeft;
+	animation-delay: 0.3s;
+}
