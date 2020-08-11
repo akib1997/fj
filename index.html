@@ -138,10 +138,13 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aperiam, sed ea debitis numquam
                         vel nam ad laudantium dolores quibusdam voluptatibus corrupti esse non laboriosam vero minus
                         quia iure enim.</p>
-                    <a href="#">Know More</a>
+                    <a href="#" class="more">Know More</a>
                 </div>
-                <div class="col-lg-6">
-                    <img src="./images/xps-4TBSG2Oqu0Q-unsplash.jpg" class="img-fluid about-photo" alt="About Us">
+                <div class="col-lg-6 position-relative">
+                    <img src="./images/xps-4TBSG2Oqu0Q-unsplash.jpg" class="img-fluid" alt="About Us">
+                    <a id="play-video" class="video-play-button" href="#" data-toggle="modal" data-target="#our-video">
+                        <span></span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -259,12 +262,24 @@
 
 
 
-
-
-
-
-
-
+    <!-- Modal -->
+    <div class="modal fade" id="our-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Future Janction</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe class="w-100 about-video" src="https://www.youtube.com/embed/qMu1fz-4G9g" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Optional JavaScript
