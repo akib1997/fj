@@ -1,6 +1,4 @@
 $(document).ready(function() {
-	$('.intro-content').addClass('draw');
-
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > 100) {
 			$('.header').addClass('added');
@@ -17,7 +15,6 @@ $(document).ready(function() {
 		mouseDrag: false,
 		autoplay: true,
 		autoplayTimeout: 5000,
-		// animateOut: 'slideOutUp',
 		animateOut: 'fadeOut',
 		animateIn: 'fadeIn',
 		responsive: {
@@ -33,16 +30,25 @@ $(document).ready(function() {
 		}
 	});
 
-	// $('.text-slider').owlCarousel({
-	// 	loop: true,
-	// 	autoplay: true,
-	// 	autoplayTimeout: 5000,
-	// 	dots: false,
-	// 	nav: false,
-	// 	items: 1,
-	// 	singleItem: true,
-	// 	animateOut: 'fadeOut',
-	// 	animateIn: 'fadeIn',
-	// 	smartSpeed: 450
-	// });
+	$('.blog-slider').owlCarousel({
+		loop: true,
+		margin: 20,
+		dots: false,
+		nav: true,
+		mouseDrag: false,
+		autoplay: true,
+		navText: [ "<i class='fas fa-long-arrow-alt-left'></i>", "<i class='fas fa-long-arrow-alt-right'></i>" ],
+		autoplayTimeout: 5000,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 1
+			},
+			1000: {
+				items: 3
+			}
+		}
+	});
 });

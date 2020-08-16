@@ -104,3 +104,39 @@ body {
 	animation-name: fadeInLeft;
 	animation-delay: 0.3s;
 }
+
+.owl-carousel .owl-nav.disabled {
+	display: block;
+}
+.blog-slider {
+	position: relative;
+
+	.owl-nav {
+		.owl-next,
+		.owl-prev {
+			position: absolute;
+			top: 50%;
+
+			@include tab-screen {
+				position: unset;
+			}
+
+			i {
+				font-size: 30px;
+			}
+
+			&:hover {
+				background-color: unset;
+				color: unset;
+			}
+		}
+
+		.owl-next {
+			right: -40px;
+		}
+
+		.owl-prev {
+			left: -40px;
+		}
+	}
+}
